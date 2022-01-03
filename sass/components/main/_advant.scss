@@ -1,0 +1,29 @@
+.advant__list {
+  display: flex;
+}
+
+.advant__item {
+  width: calc((100%-3 * 30) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.advant__icon {
+  @extend %flex-centering;
+  margin-bottom: 30px;
+  height: 120px;
+
+  background-color: $secondary-bgc;
+}
+
+.advant__title {
+  margin-bottom: 10px;
+  @extend %title-h3;
+}
+
+.advant__text {
+  @extend %text-primary;
+  color: $secondary-text-color;
+}

@@ -1,0 +1,11 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__container {
+  @extend %flex-align-center;
+}
+
+.page-header__header-contacts {
+  margin-left: auto;
+}

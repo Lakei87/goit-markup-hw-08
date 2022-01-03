@@ -1,0 +1,55 @@
+.header-nav {
+  @extend %flex-align-center;
+}
+
+.header-nav__logo {
+  margin-right: 93px;
+}
+
+.header-nav__list {
+  display: flex;
+  @extend %header-font-styles;
+}
+
+.header-nav__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.header-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $primary-text-color;
+
+  transition: color 200ms $our-timing-effect;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.header-nav__link--active {
+  color: $accent-color;
+
+  &::after {
+    @extend %header-pseudo-elements;
+  }
+}
+
+.header-nav__link--hover {
+  &::after {
+    @extend %header-pseudo-elements;
+    transform: scaleX(0);
+    transition: transform 250ms $our-timing-effect;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}

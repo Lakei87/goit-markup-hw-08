@@ -1,0 +1,26 @@
+@import "./utils/variables";
+@import "./base/glob";
+@import "./utils/placeholders";
+@import "./components/section";
+@import "./components/container";
+@import "./components/logo";
+@import "./components/button";
+@import "./components/socials";
+@import "./components/page-header/page-header";
+@import "./components/page-header/header-nav";
+@import "./components/page-header/header-contacts";
+@import "./components/main/hero";
+@import "./components/main/modal";
+@import "./components/main/form";
+@import "./components/main/advant";
+@import "./components/main/directions";
+@import "./components/main/our-team";
+@import "./components/main/reg-custom";
+@import "./components/page-footer/page-footer";
+@import "./components/page-footer/footer-contacts";
+@import "./components/page-footer/joinus";
+@import "./components/page-footer/subscription";
+
+// ==============Стили для страницы Портфолио===============
+@import "./components/main/products-nav";
+@import "./components/main/products-list";

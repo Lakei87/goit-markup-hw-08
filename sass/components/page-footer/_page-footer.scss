@@ -1,0 +1,30 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $primery-black-color;
+}
+
+.page-footer__container {
+  display: flex;
+}
+
+.page-footer__footer-contacts {
+  margin-right: 70px;
+}
+
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: $primery-white-color;
+}
+
+.page-footer__joinus {
+  margin-top: 12px;
+}
+
+.page-footer__subscription {
+  margin-top: 12px;
+  margin-left: auto;
+}

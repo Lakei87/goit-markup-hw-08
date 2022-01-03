@@ -1,0 +1,31 @@
+.socials {
+  @extend %flex-justify-center;
+}
+
+.socials__item {
+  width: 44px;
+  height: 44px;
+
+  &:not(:nth-child(4n)) {
+    margin-right: 10px;
+  }
+}
+
+.socials__link {
+  @extend %flex-centering;
+  width: 100%;
+  height: 100%;
+
+  fill: $icon-bgc;
+
+  border-radius: 50%;
+
+  transition: fill 250ms $our-timing-effect,
+    background-color 250ms $our-timing-effect;
+
+  &:hover,
+  &:focus {
+    fill: $primery-white-color;
+    background-color: $accent-color;
+  }
+}

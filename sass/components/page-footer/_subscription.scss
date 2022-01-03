@@ -1,0 +1,51 @@
+.subscription-form__title {
+  margin-bottom: 20px;
+  @extend %title-h3;
+  color: $primery-white-color;
+}
+
+.subscription-form__inner {
+  display: inline-flex;
+}
+
+.subscription-form__input {
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+
+  color: $primery-white-color;
+  @extend %subscription-font-styles;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: $primery-black-color;
+  border-radius: 4px;
+  outline: 1px solid transparent;
+
+  transition: outline 250ms $our-timing-effect;
+
+  &:focus {
+    outline: 1px solid $accent-color;
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    @extend %subscription-font-styles;
+  }
+}
+
+.subscription-form__button {
+  position: relative;
+  padding-left: 29px;
+  padding-right: 62px;
+}
+
+.subscription-form__icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+
+  fill: $primery-white-color;
+
+  transform: translateY(-50%);
+}

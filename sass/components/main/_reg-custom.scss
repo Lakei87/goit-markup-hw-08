@@ -1,0 +1,38 @@
+.reg-custom {
+  padding-top: 78px;
+}
+.reg-custom__title {
+  margin-bottom: 50px;
+
+  @extend %title-h2;
+  text-align: center;
+}
+
+.reg-custom__list {
+  @extend %flex-justify-center;
+}
+
+.reg-custom__item {
+  &:not(:nth-child(6n)) {
+    margin-right: 30px;
+  }
+}
+
+.reg-custom__link {
+  @extend %flex-centering;
+  width: 170px;
+  height: 92px;
+
+  fill: $icon-bgc;
+
+  border: 1px solid $icon-bgc;
+  border-radius: 4px;
+
+  transition: fill 250ms $our-timing-effect, border 250ms $our-timing-effect;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
