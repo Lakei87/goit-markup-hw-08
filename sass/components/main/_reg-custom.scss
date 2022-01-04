@@ -1,6 +1,6 @@
-.reg-custom {
-  padding-top: 78px;
-}
+// .reg-custom {
+//   padding-top: 78px;
+// }
 .reg-custom__title {
   margin-bottom: 50px;
 
@@ -8,19 +8,19 @@
   text-align: center;
 }
 
-.reg-custom__list {
-  @extend %flex-justify-center;
-}
+// .reg-custom__list {
+//   @extend %flex-justify-center;
+// }
 
-.reg-custom__item {
-  &:not(:nth-child(6n)) {
-    margin-right: 30px;
-  }
-}
+// .reg-custom__item {
+//   &:not(:nth-child(6n)) {
+//     margin-right: 30px;
+//   }
+// }
 
 .reg-custom__link {
   @extend %flex-centering;
-  width: 170px;
+  // width: 170px;
   height: 92px;
 
   fill: $icon-bgc;

@@ -4,8 +4,18 @@
 
 .page-header__container {
   @extend %flex-align-center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.page-header__header-contacts {
+.page-header__button {
   margin-left: auto;
 }
+
+// .page-header__logo {
+//   margin-right: 93px;
+// }
+
+// .page-header__header-contacts {
+//   margin-left: auto;
+// }

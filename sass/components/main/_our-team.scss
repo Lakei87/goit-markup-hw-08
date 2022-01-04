@@ -9,13 +9,13 @@
   text-align: center;
 }
 
-.our-team__list {
-  @extend %flex-justify-center;
-}
+// .our-team__list {
+//   @extend %flex-justify-center;
+// }
 
 .our-team__item {
   padding-bottom: 30px;
-  width: 270px;
+  // width: 270px;
 
   text-align: center;
 
@@ -24,9 +24,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 .our-team__avatar {

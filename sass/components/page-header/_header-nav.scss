@@ -1,13 +1,10 @@
 .header-nav {
+  display: none;
   @extend %flex-align-center;
 }
 
-.header-nav__logo {
-  margin-right: 93px;
-}
-
 .header-nav__list {
-  display: flex;
+  // display: flex;
   @extend %header-font-styles;
 }
 

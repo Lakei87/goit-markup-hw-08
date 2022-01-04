@@ -1,5 +1,6 @@
 .header-contacts {
-  display: flex;
+  display: none;
+  // display: flex;
   @extend %header-font-styles;
 }
 
