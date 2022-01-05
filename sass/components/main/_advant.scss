@@ -2,13 +2,13 @@
 //   display: flex;
 // }
 
-// .advant__item {
-//   width: calc((100%-3 * 30) / 4);
+.advant__item {
+  //   width: calc((100%-3 * 30) / 4);
 
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 
 .advant__icon {
   @extend %flex-centering;
@@ -19,8 +19,9 @@
 }
 
 .advant__title {
-  // margin-bottom: 10px;
+  margin-bottom: 10px;
   @extend %title-h3;
+  text-align: center;
 }
 
 .advant__text {

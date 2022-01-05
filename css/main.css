@@ -36,6 +36,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 textarea {
@@ -118,7 +120,7 @@ textarea {
 
 .directions__title, .our-team__title, .reg-custom__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
@@ -168,6 +170,11 @@ textarea {
   letter-spacing: 0.03em;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -184,6 +191,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -314,16 +327,16 @@ textarea {
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  height: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/hero-mobile.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile.jpg);
   background-color: #c4c4c4;
+  background-size: cover;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    width: 480px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/hero-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile@2x.jpg);
   }
 }
 
@@ -553,10 +566,19 @@ textarea {
   color: #2196f3;
 }
 
+.advant__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .advant__icon {
   margin-bottom: 30px;
   height: 120px;
   background-color: #f5f4fa;
+}
+
+.advant__title {
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .advant__text {
@@ -599,7 +621,7 @@ textarea {
 }
 
 .our-team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
