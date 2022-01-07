@@ -23,6 +23,15 @@
       ),
       url(../images/mobile/hero-mobile@2x.jpg);
   }
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    background-image: url(/images/desktop/hero-bg.jpg);
+  }
 }
 
 .hero__container {

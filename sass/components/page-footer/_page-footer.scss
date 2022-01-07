@@ -1,6 +1,8 @@
 .page-footer {
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  text-align: center;
 
   background-color: $primery-black-color;
 }
@@ -14,8 +16,8 @@
 // }
 
 .page-footer__logo {
-  // display: block;
-  // margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 
   color: $primery-white-color;
 }

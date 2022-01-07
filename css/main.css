@@ -53,7 +53,7 @@ textarea {
           align-items: center;
 }
 
-.socials, .directions__list, .products-nav {
+.socials, .directions__list, .reg-custom__list, .products-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,6 +337,19 @@ textarea {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/hero-mobile@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    background-image: url(/images/desktop/hero-bg.jpg);
   }
 }
 
@@ -626,6 +639,7 @@ textarea {
 }
 
 .our-team__item {
+  margin-bottom: 30px;
   padding-bottom: 30px;
   text-align: center;
   background-color: #fff;
@@ -647,7 +661,7 @@ textarea {
 }
 
 .our-team__profession {
-  margin: 0 0 16px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -655,12 +669,26 @@ textarea {
 }
 
 .reg-custom__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.reg-custom__link {
+.reg-custom__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+.reg-custom__item {
+  margin: 15px;
+  width: 210px;
   height: 92px;
+}
+
+.reg-custom__link {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -674,21 +702,30 @@ textarea {
 }
 
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
   background-color: #2f303a;
 }
 
 .page-footer__logo {
+  display: block;
+  margin-bottom: 20px;
   color: #fff;
 }
 
+.footer-contacts {
+  margin-bottom: 60px;
+}
+
 .footer-contacts__address {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-style: normal;
   color: #fff;
 }
 
 .footer-contacts__mail {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -704,6 +741,10 @@ textarea {
 
 .footer-contacts__tel:hover, .footer-contacts__tel:focus {
   color: #2196f3;
+}
+
+.joinus {
+  margin-bottom: 60px;
 }
 
 .joinus__title {
@@ -722,9 +763,10 @@ textarea {
 }
 
 .subscription-form__input {
-  margin-right: 12px;
-  height: 50px;
+  margin-bottom: 20px;
   padding: 15px 16px;
+  width: 100%;
+  height: 50px;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2f303a;

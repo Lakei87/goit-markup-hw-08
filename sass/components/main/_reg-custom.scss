@@ -2,26 +2,29 @@
 //   padding-top: 78px;
 // }
 .reg-custom__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   @extend %title-h2;
   text-align: center;
 }
 
-// .reg-custom__list {
-//   @extend %flex-justify-center;
-// }
+.reg-custom__list {
+  @extend %flex-justify-center;
+  flex-wrap: wrap;
+  margin: -15px;
+}
 
-// .reg-custom__item {
-//   &:not(:nth-child(6n)) {
-//     margin-right: 30px;
-//   }
-// }
+.reg-custom__item {
+  margin: 15px;
+  width: 210px;
+  height: 92px;
+}
 
 .reg-custom__link {
   @extend %flex-centering;
-  // width: 170px;
-  height: 92px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
 
   fill: $icon-bgc;
 
