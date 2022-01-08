@@ -1,12 +1,12 @@
 .products-nav {
-  @extend %flex-justify-center;
-  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+  margin-bottom: 40px;
 }
 
 .products-nav__item {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
+  margin: 8px;
 }
 
 .products-nav__button {

@@ -22,21 +22,27 @@
     <!-- ======Шапка страницы====== -->
     <header class="page-header">
       <div class="container page-header__container">
+        <a class="logo page-header__logo" href="./index.html"
+          ><span class="logo__accent">Web</span>&nbsp;Studio</a
+        >
+        <button class="button page-header__button" type="button">
+          <svg width="40" height="40">
+            <use href="images/icons.svg#icon-menu"></use>
+            <use href="images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
         <nav class="header-nav">
-          <a class="logo header-nav__logo" href="./index.html"
-            ><span class="logo__accent">Web</span>&nbsp;Studio</a
-          >
           <ul class="header-nav__list">
             <li class="header-nav__item">
               <a
-                class="header-nav__link header-nav__link--hover"
+                class="header-nav__link header-nav__link--active"
                 href="./index.html"
                 >Студия</a
               >
             </li>
             <li class="header-nav__item">
               <a
-                class="header-nav__link header-nav__link--active"
+                class="header-nav__link header-nav__link--hover"
                 href="./portfolio.html"
                 >Портфолио</a
               >
@@ -107,13 +113,19 @@
               <ul class="products-content">
                 <li class="products-content__item">
                   <div class="products-content__wrapper">
-                    <img
-                      class="products-content__img"
-                      src="./images/web-site1.jpg"
-                      alt="web-site1"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/web-site1-mobile.jpg    1x,
+                          ./images/mobile/web-site1-mobile@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="products-content__img"
+                        src="./images/mobile/web-site1-mobile.jpg"
+                        alt="web-site1"
+                      />
+                    </picture>
                     <div class="products-content__inner">
                       <p class="products-content__inner-text">
                         Технокряк это современная площадка распространения
@@ -134,13 +146,19 @@
               <ul class="products-content">
                 <li class="products-content__item">
                   <div class="products-content__wrapper">
-                    <img
-                      class="products-content__img"
-                      src="./images/design1.jpg"
-                      alt="web-site1"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/design1-mobile.jpg    1x,
+                          ./images/mobile/design1-mobile@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="products-content__img"
+                        src="./images/mobile/design1-mobile.jpg"
+                        alt="design1"
+                      />
+                    </picture>
                     <div class="products-content__inner">
                       <p class="products-content__inner-text">
                         Технокряк это современная площадка распространения
@@ -163,13 +181,19 @@
               <ul class="products-content">
                 <li class="products-content__item">
                   <div class="products-content__wrapper">
-                    <img
-                      class="products-content__img"
-                      src="./images/app1.jpg"
-                      alt="web-site1"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/app1-mobile.jpg    1x,
+                          ./images/mobile/app1-mobile@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="products-content__img"
+                        src="./images/mobile/app1-mobile.jpg"
+                        alt="app1"
+                      />
+                    </picture>
                     <div class="products-content__inner">
                       <p class="products-content__inner-text">
                         Технокряк это современная площадка распространения
@@ -190,13 +214,19 @@
               <ul class="products-content">
                 <li class="products-content__item">
                   <div class="products-content__wrapper">
-                    <img
-                      class="products-content__img"
-                      src="./images/marketing1.jpg"
-                      alt="web-site1"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/marketing1-mobile.jpg    1x,
+                          ./images/mobile/marketing1-mobile@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="products-content__img"
+                        src="./images/mobile/marketing1-mobile.jpg"
+                        alt="marketing1"
+                      />
+                    </picture>
                     <div class="products-content__inner">
                       <p class="products-content__inner-text">
                         Технокряк это современная площадка распространения
@@ -217,13 +247,19 @@
               <ul class="products-content">
                 <li class="products-content__item">
                   <div class="products-content__wrapper">
-                    <img
-                      class="products-content__img"
-                      src="./images/app2.jpg"
-                      alt="web-site1"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/app2-mobile.jpg    1x,
+                          ./images/mobile/app2-mobile@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="products-content__img"
+                        src="./images/mobile/app2-mobile.jpg"
+                        alt="app2"
+                      />
+                    </picture>
                     <div class="products-content__inner">
                       <p class="products-content__inner-text">
                         Технокряк это современная площадка распространения
@@ -244,13 +280,19 @@
               <ul class="products-content">
                 <li class="products-content__item">
                   <div class="products-content__wrapper">
-                    <img
-                      class="products-content__img"
-                      src="./images/web-site2.jpg"
-                      alt="web-site1"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/web-site2-mobile.jpg    1x,
+                          ./images/mobile/web-site2-mobile@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="products-content__img"
+                        src="./images/mobile/web-site2-mobile.jpg"
+                        alt="web-site2"
+                      />
+                    </picture>
                     <div class="products-content__inner">
                       <p class="products-content__inner-text">
                         Технокряк это современная площадка распространения
@@ -273,13 +315,19 @@
               <ul class="products-content">
                 <li class="products-content__item">
                   <div class="products-content__wrapper">
-                    <img
-                      class="products-content__img"
-                      src="./images/design2.jpg"
-                      alt="web-site1"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/design2-mobile.jpg    1x,
+                          ./images/mobile/design2-mobile@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="products-content__img"
+                        src="./images/mobile/design2-mobile.jpg"
+                        alt="design2"
+                      />
+                    </picture>
                     <div class="products-content__inner">
                       <p class="products-content__inner-text">
                         Технокряк это современная площадка распространения
@@ -302,13 +350,19 @@
               <ul class="products-content">
                 <li class="products-content__item">
                   <div class="products-content__wrapper">
-                    <img
-                      class="products-content__img"
-                      src="./images/marketing2.jpg"
-                      alt="web-site1"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/marketing2-mobile.jpg    1x,
+                          ./images/mobile/marketing2-mobile@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="products-content__img"
+                        src="./images/mobile/marketing2-mobile.jpg"
+                        alt="marketing2"
+                      />
+                    </picture>
                     <div class="products-content__inner">
                       <p class="products-content__inner-text">
                         Технокряк это современная площадка распространения
@@ -329,13 +383,19 @@
               <ul class="products-content">
                 <li class="products-content__item">
                   <div class="products-content__wrapper">
-                    <img
-                      class="products-content__img"
-                      src="./images/app3.jpg"
-                      alt="web-site1"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/app3-mobile.jpg    1x,
+                          ./images/mobile/app3-mobile@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="products-content__img"
+                        src="./images/mobile/app3-mobile.jpg"
+                        alt="app3"
+                      />
+                    </picture>
                     <div class="products-content__inner">
                       <p class="products-content__inner-text">
                         Технокряк это современная площадка распространения
