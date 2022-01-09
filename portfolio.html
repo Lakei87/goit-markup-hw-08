@@ -28,51 +28,82 @@
         <button class="button page-header__button" type="button">
           <svg width="40" height="40">
             <use href="images/icons.svg#icon-menu"></use>
-            <use href="images/icons.svg#icon-menu-close"></use>
           </svg>
         </button>
-        <nav class="header-nav">
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
+        <div class="mobile-menu">
+          <button
+            class="button page-header__button mobile-menu__button"
+            type="button"
+          >
+            <svg width="40" height="40">
+              <use href="images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a
+                  class="header-nav__link header-nav__link--hover"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="header-nav__item">
+                <a
+                  class="header-nav__link header-nav__link--active"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link header-nav__link--hover" href=""
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-contacts page-header__header-contacts">
+            <li class="header-contacts__item">
               <a
-                class="header-nav__link header-nav__link--active"
-                href="./index.html"
-                >Студия</a
+                class="header-contacts__link header-contacts__link--big-link"
+                href="tel:+380961111111"
+              >
+                <svg class="header-contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-mobile-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
-            <li class="header-nav__item">
+            <li class="header-contacts__item">
               <a
-                class="header-nav__link header-nav__link--hover"
-                href="./portfolio.html"
-                >Портфолио</a
+                class="header-contacts__link header-contacts__link--small-link"
+                href="mailto:info@devstudio.com"
               >
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--hover" href=""
-                >Контакты</a
+                <svg class="header-contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
           </ul>
-        </nav>
 
-        <ul class="header-contacts page-header__header-contacts">
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="header-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="header-contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-mobile-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="socials-mobmenu">
+            <li class="socials-mobmenu__item">
+              <a href="" class="socials-mobmenu__link">Instagram</a>
+            </li>
+            <li class="socials-mobmenu__item">
+              <a href="" class="socials-mobmenu__link">Twitter</a>
+            </li>
+            <li class="socials-mobmenu__item">
+              <a href="" class="socials-mobmenu__link">Facebook</a>
+            </li>
+            <li class="socials-mobmenu__item">
+              <a href="" class="socials-mobmenu__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- =====Уникальный контент страницы===== -->

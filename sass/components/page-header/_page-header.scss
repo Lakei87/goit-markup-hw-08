@@ -3,13 +3,21 @@
 }
 
 .page-header__container {
-  @extend %flex-align-center;
+  position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
+  @extend %flex-align-center;
 }
 
 .page-header__button {
   margin-left: auto;
+  background-color: transparent;
+  fill: $primary-text-color;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
 // .page-header__logo {

@@ -25,11 +25,10 @@
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 100%;
   padding: 40px;
 
   background-color: $primery-white-color;
@@ -37,6 +36,10 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $our-timing-effect;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
 }
 
 .button--close {

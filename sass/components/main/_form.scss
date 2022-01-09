@@ -3,7 +3,7 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
 }
 
@@ -103,6 +103,7 @@
   border-radius: 4px;
   background-origin: border-box;
   background-size: contain;
+  background-repeat: no-repeat;
 
   transition: background-image 250ms $our-timing-effect,
     border 250ms $our-timing-effect, background-color 250ms $our-timing-effect;
