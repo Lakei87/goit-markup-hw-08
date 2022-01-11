@@ -3,10 +3,19 @@
 }
 
 .page-header__container {
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
   @extend %flex-align-center;
+
+  @media screen and (max-width: $tablet-to) {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.page-header__logo {
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+  }
 }
 
 .page-header__button {
@@ -18,12 +27,12 @@
   &:focus {
     fill: $accent-color;
   }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
-// .page-header__logo {
-//   margin-right: 93px;
-// }
-
-// .page-header__header-contacts {
-//   margin-left: auto;
-// }
+.page-header__header-contacts {
+  margin-left: auto;
+}

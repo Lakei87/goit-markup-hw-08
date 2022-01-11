@@ -1,30 +1,40 @@
 .mobile-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  padding: 48px 40px;
-  width: 100%;
-  background-color: tomato;
+  // display: none;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $tablet-to) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    padding: 48px 40px;
+    width: 100%;
+    background-color: $primery-white-color;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: $tablet-to) {
     width: $mobile;
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .mobile-menu__button {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  z-index: 1;
-  background-color: transparent;
-  fill: $primary-text-color;
+  @media screen and (max-width: $tablet-to) {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 1;
+    background-color: transparent;
+    fill: $primary-text-color;
 
-  &:hover,
-  &:focus {
-    fill: $accent-color;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
   }
 }
