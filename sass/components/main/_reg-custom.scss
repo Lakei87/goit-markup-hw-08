@@ -4,8 +4,17 @@
 .reg-custom__title {
   margin-bottom: 30px;
 
-  @extend %title-h2;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .reg-custom__list {

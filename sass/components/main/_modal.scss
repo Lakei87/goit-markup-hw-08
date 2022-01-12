@@ -11,6 +11,7 @@
   z-index: 999;
   width: 100vw;
   height: 100vh;
+  padding: 10px;
 
   background-color: rgba(0, 0, 0, 0.1);
 
@@ -25,9 +26,9 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
   width: 100vw;
   height: 100vh;
   overflow: auto;
@@ -36,7 +37,7 @@
   background-color: $primery-white-color;
   border-radius: 4px;
 
-  transform: translate(-50%, -50%) scale(1);
+  // transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $our-timing-effect;
 
   @media screen and (min-width: $mobile) {

@@ -14,13 +14,6 @@
   justify-content: center;
 }
 
-// %header-font-styles {
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-// }
-
 %header-pseudo-elements {
   content: "";
   position: absolute;
@@ -61,10 +54,11 @@
   overflow: hidden;
 }
 
+// delete
 %title-h2 {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.17;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: $primary-text-color;
 }
@@ -79,7 +73,7 @@
 
 %text-primary {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 

@@ -7,9 +7,13 @@
   background-color: $primery-black-color;
 }
 
-// .page-footer__container {
-//   display: flex;
-// }
+.page-footer__container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 // .page-footer__footer-contacts {
 //   margin-right: 70px;

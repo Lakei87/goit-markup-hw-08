@@ -5,13 +5,14 @@
 .footer-contacts__address {
   margin-bottom: 8px;
 
-  font-style: normal;
   @extend %text-primary;
+  font-style: normal;
   color: $primery-white-color;
 }
 
 .footer-contacts__mail {
   margin-bottom: 8px;
+
   @extend %footer-contacts-styles;
   @extend %text-primary;
   transition: color 250ms $our-timing-effect;
