@@ -1,5 +1,5 @@
 .mobile-menu {
-  display: none;
+  // display: none;
 
   @media screen and (max-width: $tablet-to) {
     position: absolute;
@@ -20,6 +20,7 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
+    margin-left: auto;
   }
 }
 

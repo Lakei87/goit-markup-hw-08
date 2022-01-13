@@ -1,6 +1,9 @@
 .directions {
-  // display: none;
   padding-top: 0;
+
+  @media screen and (max-width: $desktop-to) {
+    display: none;
+  }
 }
 
 .directions__title {

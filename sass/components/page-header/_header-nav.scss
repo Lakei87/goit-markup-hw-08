@@ -1,6 +1,12 @@
-// .header-nav {
-//   @extend %flex-align-center;
-// }
+.header-nav {
+  @media screen and (min-width: $tablet) {
+    margin-right: 84px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 305px;
+  }
+}
 
 .header-nav__list {
   font-weight: 500;
@@ -11,17 +17,18 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
+
     font-size: 14px;
     line-height: 1.14;
   }
 }
 
 .header-nav__item {
-  outline: 1px solid blue;
   @media screen and (max-width: $tablet-to) {
     &:not(:last-child) {
       margin-bottom: 32px;
     }
+
     &:last-child {
       margin-bottom: 302px;
     }
@@ -29,6 +36,10 @@
 
   @media screen and (min-width: $tablet) {
     position: relative;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
