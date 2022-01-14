@@ -1,5 +1,6 @@
 .socials {
-  @extend %flex-justify-center;
+  display: flex;
+  justify-content: center;
 }
 
 .socials__item {

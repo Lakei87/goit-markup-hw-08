@@ -2,14 +2,19 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  text-align: center;
-
   background-color: $primery-black-color;
+
+  @media screen and (max-width: $desktop) {
+    text-align: center;
+  }
 }
 
 .page-footer__container {
   @media screen and (min-width: $tablet) {
     display: flex;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop-to) {
     flex-wrap: wrap;
     justify-content: center;
   }

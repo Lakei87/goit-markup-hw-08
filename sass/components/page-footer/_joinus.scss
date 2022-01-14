@@ -1,5 +1,15 @@
 .joinus {
-  margin-bottom: 60px;
+  @media screen and (max-width: $tablet-to) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 12px;
+  }
 }
 
 .joinus__title {

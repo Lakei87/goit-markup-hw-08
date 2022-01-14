@@ -1,5 +1,15 @@
 .footer-contacts {
-  margin-bottom: 60px;
+  @media screen and (max-width: $desktop-to) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 
 .footer-contacts__address {
@@ -8,6 +18,10 @@
   @extend %text-primary;
   font-style: normal;
   color: $primery-white-color;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts__mail {
@@ -20,6 +34,10 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
   }
 }
 

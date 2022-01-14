@@ -1,8 +1,9 @@
 .directions {
-  padding-top: 0;
+  display: none;
 
-  @media screen and (max-width: $desktop-to) {
-    display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    padding-top: 0;
   }
 }
 
@@ -18,11 +19,13 @@
 }
 
 .directions__list {
-  @extend %flex-justify-center;
+  display: flex;
+  justify-content: center;
 }
 
 .directions__item {
   position: relative;
+  background-color: tomato;
 
   &:not(:last-child) {
     margin-right: 30px;

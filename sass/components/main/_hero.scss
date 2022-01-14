@@ -24,11 +24,11 @@
       url(../images/mobile/hero-mobile@2x.jpg);
   }
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile) and (max-width: $tablet-to) {
     width: $mobile;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop-to) {
     width: $tablet;
     background-image: linear-gradient(
         to right,
@@ -53,7 +53,7 @@
   @media screen and (min-width: $desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
-    width: $desktop;
+    max-width: 1600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),

@@ -53,15 +53,6 @@ textarea {
           align-items: center;
 }
 
-.socials, .directions__list, .reg-custom__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .socials__link, .button--close, .advant__icon, .directions__inner, .reg-custom__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,6 +236,15 @@ textarea {
 
 .socials-mobmenu__link {
   color: #2196f3;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .socials__item {
@@ -590,13 +590,13 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
     width: 480px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/hero-tablet.jpg);
@@ -605,7 +605,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/hero-tablet@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-tablet@2x.jpg);
@@ -616,7 +616,7 @@ textarea {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 1200px;
+    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/hero-desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hero-desktop.jpg);
     background-color: #c4c4c4;
@@ -934,12 +934,13 @@ textarea {
 }
 
 .directions {
-  padding-top: 0;
+  display: none;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .directions {
-    display: none;
+    display: block;
+    padding-top: 0;
   }
 }
 
@@ -953,8 +954,18 @@ textarea {
   text-align: center;
 }
 
+.directions__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .directions__item {
   position: relative;
+  background-color: tomato;
 }
 
 .directions__item:not(:last-child) {
@@ -996,9 +1007,18 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .our-team__item {
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -1007,6 +1027,36 @@ textarea {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .our-team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+  .our-team__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  .our-team__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__item {
+    padding-bottom: 30px;
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 4);
+        flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+  .our-team__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .our-team__avatar {
@@ -1023,6 +1073,12 @@ textarea {
   color: #757575;
 }
 
+.our-team__socials {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .reg-custom__title {
   margin-bottom: 30px;
   font-weight: 700;
@@ -1035,21 +1091,43 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .reg-custom__title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
   }
 }
 
 .reg-custom__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: -15px;
 }
 
 .reg-custom__item {
   margin: 15px;
-  width: 210px;
+  -ms-flex-preferred-size: 210px;
+      flex-basis: 210px;
   height: 92px;
+}
+
+@media screen and (min-width: 768px) {
+  .reg-custom__item {
+    -ms-flex-preferred-size: 226px;
+        flex-basis: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reg-custom__item {
+    -ms-flex-preferred-size: 170px;
+        flex-basis: 170px;
+  }
 }
 
 .reg-custom__link {
@@ -1071,8 +1149,13 @@ textarea {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
   background-color: #2f303a;
+}
+
+@media screen and (max-width: 1200px) {
+  .page-footer {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1080,6 +1163,11 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -1094,14 +1182,34 @@ textarea {
   color: #fff;
 }
 
-.footer-contacts {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .footer-contacts {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    margin-right: 70px;
+  }
 }
 
 .footer-contacts__address {
   margin-bottom: 8px;
   font-style: normal;
   color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts__address {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts__mail {
@@ -1114,6 +1222,12 @@ textarea {
   color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-contacts__mail {
+    margin-bottom: 9px;
+  }
+}
+
 .footer-contacts__tel {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1123,8 +1237,22 @@ textarea {
   color: #2196f3;
 }
 
-.joinus {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .joinus {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .joinus {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .joinus {
+    margin-top: 12px;
+  }
 }
 
 .joinus__title {
@@ -1132,13 +1260,27 @@ textarea {
   color: #fff;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-top: 12px;
+    margin-left: auto;
+  }
+}
+
 .subscription-form__title {
   margin-bottom: 20px;
   color: #fff;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription-form__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .subscription-form__input {
-  margin-bottom: 20px;
   padding: 15px 16px;
   width: 100%;
   height: 50px;
@@ -1169,6 +1311,19 @@ textarea {
 
 .subscription-form__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+  .subscription-form__input {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .subscription-form__button {

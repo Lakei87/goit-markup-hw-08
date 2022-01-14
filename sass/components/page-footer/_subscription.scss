@@ -1,15 +1,23 @@
+.subscription {
+  @media screen and (min-width: $desktop) {
+    margin-top: 12px;
+    margin-left: auto;
+  }
+}
+
 .subscription-form__title {
   margin-bottom: 20px;
   @extend %title-h3;
   color: $primery-white-color;
 }
 
-// .subscription-form__inner {
-//   display: inline-flex;
-// }
+.subscription-form__inner {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
 
 .subscription-form__input {
-  margin-bottom: 20px;
   padding: 15px 16px;
   width: 100%;
   height: 50px;
@@ -31,6 +39,15 @@
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
     @extend %subscription-font-styles;
+  }
+
+  @media screen and (max-width: $tablet-to) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-right: 12px;
   }
 }
 
