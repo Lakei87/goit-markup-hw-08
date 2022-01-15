@@ -11,38 +11,54 @@
   z-index: 999;
   width: 100vw;
   height: 100vh;
-  padding: 10px;
 
   background-color: rgba(0, 0, 0, 0.1);
 
   transition: opacity 250ms $our-timing-effect,
     visibility 250ms $our-timing-effect;
+
+  overflow-y: scroll;
 }
 
 .backdrop--is-hidden {
   .modal {
-    transform: translate(-50%, -50%) scale(0.7);
+    @media screen and (min-width: $mobile) {
+      transform: translate(-50%) scale(0.7);
+    }
+
+    @media screen and (min-width: $tablet) {
+      transform: translate(-50%, -50%) scale(0.7);
+    }
   }
 }
 
 .modal {
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  width: 100vw;
-  height: 100vh;
+  position: relative;
   overflow: auto;
   padding: 40px;
 
   background-color: $primery-white-color;
   border-radius: 4px;
 
-  // transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $our-timing-effect;
 
+  @media screen and (max-width: $mobile-to) {
+    width: 100vw;
+    height: 100vh;
+  }
+
   @media screen and (min-width: $mobile) {
+    position: absolute;
+    top: 0;
+    left: 50%;
     width: 450px;
-    height: auto;
+
+    transform: translate(-50%) scale(1);
+  }
+
+  @media screen and (min-width: $tablet) {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
