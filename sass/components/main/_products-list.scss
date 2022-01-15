@@ -1,29 +1,46 @@
-// .products-list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin-left: -30px;
-//   margin-top: -30px;
-// }
-
-// .products-list__item {
-//   flex-basis: calc(100% / 3 - 30px);
-//   max-width: 100%;
-//   margin-left: 30px;
-//   margin-top: 30px;
-// }
-
-.products-list__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+.products-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
+.products-list__item {
+  @media screen and (max-width: $tablet-to) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+}
+
+.products-content {
+  height: 100%;
+}
+
 .products-content__item {
+  height: 100%;
   transition: box-shadow 250ms $our-timing-effect;
 
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -63,6 +80,10 @@
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
+
+  @media screen and (min-width: $tablet) {
+    flex-grow: 1;
+  }
 }
 
 .products-content__title {
