@@ -27,12 +27,16 @@
     display: none;
   }
 
-  &.is-open .button__icon-cross {
-    display: block;
+  &.is-open {
+    .button__icon-cross {
+      display: block;
+    }
   }
 
-  &.is-open .button__icon-menu {
-    display: none;
+  &.is-open {
+    .button__icon-menu {
+      display: none;
+    }
   }
 
   @media screen and (min-width: $tablet) {

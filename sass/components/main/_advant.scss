@@ -1,11 +1,8 @@
 .advant__list {
   @media screen and (min-width: $tablet) {
     display: flex;
-    margin: -15px;
-  }
-
-  @media screen and (min-width: $tablet) and (max-width: $desktop-to) {
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
