@@ -13,6 +13,10 @@ body {
   font-family: $primary-font-family;
   color: $primary-text-color;
   background-color: $primery-white-color;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 ul {

@@ -41,7 +41,7 @@
     @extend %subscription-font-styles;
   }
 
-  @media screen and (max-width: $tablet-to) {
+  @media screen and (max-width: $desktop-to) {
     margin-bottom: 20px;
   }
 

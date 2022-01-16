@@ -13,12 +13,6 @@
   }
 }
 
-// .page-header__logo {
-//   @media screen and (min-width: $tablet) {
-//     margin-right: 88px;
-//   }
-// }
-
 .page-header__button {
   margin-left: auto;
   background-color: transparent;
@@ -27,6 +21,18 @@
   &:hover,
   &:focus {
     fill: $accent-color;
+  }
+
+  & .button__icon-cross {
+    display: none;
+  }
+
+  &.is-open .button__icon-cross {
+    display: block;
+  }
+
+  &.is-open .button__icon-menu {
+    display: none;
   }
 
   @media screen and (min-width: $tablet) {

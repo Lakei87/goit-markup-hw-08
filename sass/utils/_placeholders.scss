@@ -1,29 +1,7 @@
-%flex-align-center {
-  display: flex;
-  align-items: center;
-}
-
-%flex-justify-center {
-  display: flex;
-  justify-content: center;
-}
-
 %flex-centering {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-%header-pseudo-elements {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  display: block;
-  width: 100%;
-  height: 4px;
-
-  border-radius: 2px;
-  background-color: $accent-color;
 }
 
 %button-primary {
