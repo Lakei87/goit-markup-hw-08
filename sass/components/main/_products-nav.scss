@@ -1,7 +1,8 @@
 .products-nav {
   display: flex;
   flex-wrap: wrap;
-  margin: -8px;
+  margin-left: -8px;
+  margin-top: -15px;
   margin-bottom: 40px;
 
   @media screen and (min-width: $tablet) {
@@ -15,7 +16,8 @@
 }
 
 .products-nav__item {
-  margin: 8px;
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .products-nav__button {
